@@ -166,7 +166,7 @@ class UseData:
                 name = o.name
 
                 def multiply(match):
-                    return str(int(match.group(1)) * o.count)
+                    return "*" + str(int(match.group(1)) * o.count)
 
                 s = re.sub(r'\*(\d+)', multiply, name)
 
