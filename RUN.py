@@ -21,8 +21,8 @@ LOG:3 - JUNGLE WOOD
 """
 if __name__ == '__main__':
 
-    arg = 20000
-    search_type = "count" # "price" or "count"
+    arg = 6000
+    search_type = "price"  # "count" or "count"
 
     if len(sys.argv) == 2:
         arg = int(sys.argv[1])
@@ -37,4 +37,4 @@ if __name__ == '__main__':
     # run.find_item("LOG:1")
     # run.find_item("LOG:2")
     # run.find_item("LOG:3")
-    # run.find_item("SPOOKY_BAIT")
+    run.find_item("SPOOKY_BAIT")

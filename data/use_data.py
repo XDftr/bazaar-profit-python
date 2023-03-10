@@ -1,6 +1,7 @@
 import json
 import requests
 import re
+import datetime
 
 from data.product import Product
 from data.exception import ProductNotFound
@@ -13,6 +14,7 @@ class UseData:
         self.objects = []
         self.data = None
         self.nr = 1
+        self.d_type = ""
 
     def update_data(self):
         products = requests.get("https://api.hypixel.net/skyblock/bazaar")
@@ -145,9 +147,11 @@ class UseData:
         self.create_classes()
 
         if type == "count":
+            self.d_type = "Item Count"
             for i in json_list:
                 self.calculate_data(i)
         else:
+            self.d_type = "Max Buy Price"
             for i in json_list:
                 self.calculate_data2(i)
 
@@ -161,7 +165,10 @@ class UseData:
         obj = sorted(self.objects, key=lambda x: x.profit, reverse=True)
 
         with open('best_flip.txt', 'w') as f:
-            f.write(f"Item kogus: {self.nr}\n\n")
+            timestamp = datetime.datetime.now()
+            f.write(timestamp.strftime("%d.%m.%Y %H:%M:%S") + "\n")
+            f.write(f"{self.d_type}: {self.nr}\n\n")
+
             for o in obj:
                 name = o.name
 
@@ -187,7 +194,9 @@ class UseData:
         obj = sorted(self.objects, key=lambda x: x.profit / x.buy_price, reverse=True)
 
         with open('best_flip_by_%.txt', 'w') as f:
-            f.write(f"Item kogus: {self.nr}\n\n")
+            timestamp = datetime.datetime.now()
+            f.write(timestamp.strftime("%d.%m.%Y %H:%M:%S") + "\n")
+            f.write(f"{self.d_type}: {self.nr}\n\n")
             for o in obj:
                 name = o.name
 
