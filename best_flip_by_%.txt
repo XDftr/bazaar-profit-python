@@ -1,0 +1,151 @@
+Item kogus: 200000
+
+Name: SPOOKY_BAIT*10810 = (RAW_FISH*10810, PUMPKIN*10810)
+Buy (item): 18.5
+Sell (item): 397.5
+Count: 10810
+Buy price: 199,985.0
+Sell price: 4,296,975.0
+Past week volume: 1,116,010
+Profit: 4,096,990.0
+Flip %: 2048.65
+
+Name: LIGHT_BAIT*15624 = (RAW_FISH*15624, PRISMARINE_CRYSTALS*15624)
+Buy (item): 12.8
+Sell (item): 127.3
+Count: 15624
+Buy price: 199,987.2
+Sell price: 1,988,935.2
+Past week volume: 406,150
+Profit: 1,788,948.0
+Flip %: 894.53
+
+Name: BLESSED_BAIT*4705 = (RAW_FISH*4705, PRISMARINE_CRYSTALS*4705, GOLD_INGOT*42345)
+Buy (item): 42.5
+Sell (item): 342.5
+Count: 4705
+Buy price: 199,962.5
+Sell price: 1,611,462.5
+Past week volume: 367,980
+Profit: 1,411,500.0
+Flip %: 705.88
+
+Name: FISH_BAIT*7092 = (RAW_FISH*14184, RAW_FISH:1*7092)
+Buy (item): 28.2
+Sell (item): 97.0
+Count: 7092
+Buy price: 199,994.4
+Sell price: 687,924.0
+Past week volume: 6,051,987
+Profit: 487,929.6
+Flip %: 243.97
+
+Name: WHALE_BAIT*203 = (FISH_BAIT*203, DARK_BAIT*203, LIGHT_BAIT*203, BLESSED_BAIT*203)
+Buy (item): 984.6
+Sell (item): 2497.0
+Count: 203
+Buy price: 199,873.80000000002
+Sell price: 506,891.0
+Past week volume: 774,197
+Profit: 307,017.2
+Flip %: 153.61
+
+Name: DARK_BAIT*199 = (INK_SACK*199, RAW_FISH*199)
+Buy (item): 1000.3000000000001
+Sell (item): 2509.1
+Count: 199
+Buy price: 199,059.7
+Sell price: 499,310.89999999997
+Past week volume: 302,543
+Profit: 300,251.2
+Flip %: 150.83
+
+Name: SPIKED_BAIT*9302 = (RAW_FISH*9302, RAW_FISH:3*9302)
+Buy (item): 21.5
+Sell (item): 50.0
+Count: 9302
+Buy price: 199,993.0
+Sell price: 465,100.0
+Past week volume: 675,743
+Profit: 265,107.0
+Flip %: 132.56
+
+Name: GRAND_EXP_BOTTLE*56 = (ENCHANTED_LAPIS_LAZULI*336)
+Buy (item): 3546.6000000000004
+Sell (item): 4575.7
+Count: 56
+Buy price: 198,609.60000000003
+Sell price: 256,239.19999999998
+Past week volume: 2,650,580
+Profit: 57,629.59999999999
+Flip %: 29.02
+
+Name: ENCHANTED_FIREWORK_ROCKET*1 = (ENCHANTED_GUNPOWDER*64)
+Buy (item): 156838.4
+Sell (item): 199999.8
+Count: 1
+Buy price: 156,838.4
+Sell price: 199,999.8
+Past week volume: 2,680
+Profit: 43,161.4
+Flip %: 27.52
+
+Name: REVENANT_VISCERA*3 = (REVENANT_FLESH*384, ENCHANTED_STRING*96)
+Buy (item): 56592.0
+Sell (item): 68896.2
+Count: 3
+Buy price: 169,776.0
+Sell price: 206,688.59999999998
+Past week volume: 199,312
+Profit: 36,912.600000000006
+Flip %: 21.74
+
+Name: GOLDEN_TOOTH*2 = (WOLF_TOOTH*256, ENCHANTED_GOLD*64)
+Buy (item): 73798.4
+Sell (item): 87385.0
+Count: 2
+Buy price: 147,596.8
+Sell price: 174,770.0
+Past week volume: 62,097
+Profit: 27,173.2
+Flip %: 18.41
+
+Name: ENCHANTED_LAVA_BUCKET*1 = (ENCHANTED_COAL_BLOCK*2, ENCHANTED_IRON*3)
+Buy (item): 118814.90000000001
+Sell (item): 137417.9
+Count: 1
+Buy price: 118,814.90000000001
+Sell price: 137,417.9
+Past week volume: 65,403
+Profit: 18,603.0
+Flip %: 15.66
+
+Name: TARANTULA_SILK*1 = (TARANTULA_WEB*128, ENCHANTED_FLINT*32)
+Buy (item): 149872.0
+Sell (item): 167680.5
+Count: 1
+Buy price: 149,872.0
+Sell price: 167,680.5
+Past week volume: 74,534
+Profit: 17,808.5
+Flip %: 11.88
+
+Name: HOT_POTATO_BOOK*3 = (ENCHANTED_BAKED_POTATO*3)
+Buy (item): 57344.2
+Sell (item): 63996.7
+Count: 3
+Buy price: 172,032.59999999998
+Sell price: 191,990.09999999998
+Past week volume: 87,112
+Profit: 19,957.5
+Flip %: 11.6
+
+Name: ENCHANTED_JUNGLE_LOG*99 = (LOG:3*57024)
+Buy (item): 2016.0
+Sell (item): 2248.1
+Count: 99
+Buy price: 199,584.0
+Sell price: 222,561.9
+Past week volume: 2,911,652
+Profit: 22,977.899999999998
+Flip %: 11.51
