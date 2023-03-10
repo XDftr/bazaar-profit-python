@@ -72,7 +72,7 @@ class UseData:
         print(f"Item sell price: {sell_price}")
         print(f"Past week volume: {past_week_volume}")
         print(f"Profit {profit}")
-        obj = Object(string_a, buy_price, sell_price, past_week_volume, profit, self.nr)
+        obj = Object(string_a, buy_price, sell_price, past_week_volume, profit, self.nr, buy_price_1, sell_price_1)
         self.objects.append(obj)
 
     def calculate_data2(self, item: dict):
