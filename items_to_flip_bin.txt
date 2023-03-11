@@ -1,0 +1,1 @@
+{"crafting_materials": {"ENCHANTED_OBSIDIAN": 512}, "sell_item": "Treecapitator"}

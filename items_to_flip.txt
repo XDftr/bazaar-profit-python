@@ -1,6 +1,6 @@
 {"crafting_materials": {"INK_SACK": 1, "RAW_FISH": 1}, "sell_item": {"DARK_BAIT": 1}}
 {"crafting_materials": {"RAW_FISH": 2, "RAW_FISH:1": 1}, "sell_item": {"FISH_BAIT": 1}}
-{"crafting_materials": {"RAW_FISH": 1, "PRISMARINE_CRYSTALS": 1}, "sell_item": {"LIGHT_BAIT": 1}}
+{"crafting_materials": {"RAW_FISH": 1, "PRISMARINE_CRYSTALS": 2}, "sell_item": {"LIGHT_BAIT": 1}}
 {"crafting_materials": {"RAW_FISH": 1, "RAW_FISH:3": 1}, "sell_item": {"SPIKED_BAIT": 1}}
 {"crafting_materials": {"RAW_FISH": 1, "PUMPKIN": 1}, "sell_item": {"SPOOKY_BAIT": 1}}
 {"crafting_materials": {"RAW_FISH": 1, "PRISMARINE_CRYSTALS": 1, "GOLD_INGOT": 9}, "sell_item": {"BLESSED_BAIT": 1}}

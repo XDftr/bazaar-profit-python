@@ -1,3 +1,8 @@
 /data/data.json
 /best_flip.txt
 /best_flip_by_%.txt
+/data/data_bazaar_full.json
+/data/data_bin.json
+/data/data_bin_full.json
+/best_flip_bin.txt
+/best_flip_by_%_bin.txt

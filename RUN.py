@@ -1,5 +1,5 @@
-from data.use_data import UseData
-import sys
+from data.execute import Execute
+from data.bin_data import BinData
 
 """
 Kasulik teada:
@@ -21,15 +21,12 @@ LOG:3 - JUNGLE WOOD
 """
 if __name__ == '__main__':
 
-    arg = 6000
-    search_type = "price"  # "count" or "count"
+    search = "auction"  # "bazaar" or "auction" or "both"
+    arg = 1
+    search_type = "count"  # "count" or "count"
+    bool_bin = False # False | True - Should we update bin data? Takes 1-3 minutes.
 
-    if len(sys.argv) == 2:
-        arg = int(sys.argv[1])
-
-    run = UseData()
-    run.update_data()
-    run.run(arg, search_type)
+    run = Execute(search, search_type, arg, False)
 
     # run.create_classes()
     # run.test()
@@ -37,4 +34,4 @@ if __name__ == '__main__':
     # run.find_item("LOG:1")
     # run.find_item("LOG:2")
     # run.find_item("LOG:3")
-    run.find_item("SPOOKY_BAIT")
+    # run.find_item("SPOOKY_BAIT")
