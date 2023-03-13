@@ -1,1 +1,12 @@
 {"crafting_materials": {"ENCHANTED_OBSIDIAN": 512}, "sell_item": "Treecapitator"}
+{"crafting_materials": {"ENCHANTED_NETHER_STALK": 256}, "sell_item": "Potion Affinity Artifact"}
+{"crafting_materials": {"ENCHANTED_REDSTONE_BLOCK": 7, "SUPER_COMPACTOR_3000": 1}, "sell_item": "Personal Compactor 4000"}
+{"crafting_materials": {"ENCHANTED_EMERALD_BLOCK": 2}, "sell_item": "Emerald Blade"}
+{"crafting_materials": {"ENCHANTED_IRON_BLOCK": 5}, "sell_item": "Enchanted Hopper"}
+{"crafting_materials": {"ENCHANTED_LAPIS_LAZULI_BLOCK": 9}, "sell_item": "Experience Artifact"}
+{"crafting_materials": {"ENCHANTED_OBSIDIAN": 256, "ENCHANTED_IRON": 192}, "sell_item": "Reforge Anvil"}
+{"crafting_materials": {"ENCHANTED_FEATHER": 136}, "sell_item": "Feather Artifact"}
+{"crafting_materials": {"ENCHANTED_LEATHER": 16}, "sell_item": "Large Backpack"}
+{"crafting_materials": {"ENCHANTED_SUGAR_CANE": 48, "ENCHANTED_SUGAR": 96}, "sell_item": "Speed Artifact"}
+{"crafting_materials": {"ENCHANTED_PACKED_ICE": 64}, "sell_item": "Frozen Scythe"}
+{"crafting_materials": {"ENCHANTED_EYE_OF_ENDER": 32, "ENCHANTED_DIAMOND": 1}, "sell_item": "Aspect of the End"}

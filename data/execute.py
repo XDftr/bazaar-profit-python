@@ -19,6 +19,7 @@ class Execute:
         self.bin_objects = []
         self.file_type = ""
         self.boolean_bin = boolean
+        self.bin_statistics = {}
 
         if t == 'bazaar':
             self.parse_bazaar_data()
@@ -64,7 +65,9 @@ class Execute:
             run.import_data()
             run.write_file()
             run.write_full_file()
+            run.write_statistics()
         self.bin_data = run.read_from_file()
+        self.bin_statistics = run.statistics
 
         for i in json_list:
             self.calculate_data_bin(i)
@@ -109,8 +112,9 @@ class Execute:
         buy_price = buy_price
         sell_price = sell_price
         profit = profit
+        count = self.bin_statistics.get(sell_item)
 
-        obj = Object(string_a, buy_price, sell_price, 0, profit, 1, 0, 0)
+        obj = Object(string_a, buy_price, sell_price, 0, profit, count, 0, 0)
         self.bazaar_objects.append(obj)
 
 
@@ -234,6 +238,7 @@ class Execute:
                 s = re.sub(r'\*(\d+)', multiply, name)
 
                 f.write(f'Name: {s}\n'
+                        f'Bin count: {o.count}\n'
                         f'Buy price: {"{:,}".format(o.buy_price)}\n'
                         f'Sell price: {"{:,}".format(o.sell_price)}\n'
                         f'Profit: {"{:,}".format(o.profit)}\n'

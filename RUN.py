@@ -21,12 +21,14 @@ LOG:3 - JUNGLE WOOD
 """
 if __name__ == '__main__':
 
-    search = "auction"  # "bazaar" or "auction" or "both"
-    arg = 1
+    search = "bazaar"  # "bazaar" or "auction" or "both"
+    arg = 6000
     search_type = "count"  # "count" or "count"
-    bool_bin = False # False | True - Should we update bin data? Takes 1-3 minutes.
+    bool_bin = True # False | True - Should we update bin data? Takes 1-3 minutes.
 
-    run = Execute(search, search_type, arg, False)
+    run = Execute(search, search_type, arg, bool_bin)
+
+    run2 = Execute("auction", search_type, arg, bool_bin)
 
     # run.create_classes()
     # run.test()

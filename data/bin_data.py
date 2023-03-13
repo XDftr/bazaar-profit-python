@@ -1,5 +1,6 @@
 import json
 import requests
+from collections import defaultdict
 
 
 class BinData:
@@ -8,6 +9,7 @@ class BinData:
         self.full_data = {}
         self.total_pages = 0
         self.page = 0
+        self.statistics = defaultdict(int)
 
     def request_data(self):
         response = requests.get(f'https://api.hypixel.net/skyblock/auctions?page={self.page}')
@@ -28,13 +30,35 @@ class BinData:
                 if '✪' in name or '◆' in name or '⚚' in name and '✿' in name:
                     continue
                 if bid:
-                    if name in self.data.keys():
-                        if price < self.data.get(name):
-                            self.data[name] = price
-                    else:
-                        self.data[name] = price
+                    self.add_item(name, price)
+                    self.add_statistics(name)
             self.page += 1
             data = self.request_data()
+
+    def add_item(self, name, price):
+        if name in self.data.keys():
+            if price < self.data.get(name):
+                self.data[name] = price
+        else:
+            self.data[name] = price
+
+    def add_statistics(self, name):
+        exempt = ["Pure", "Silent", "Spicy", "Shaded", "Fierce", "Strong", "Odd", "Lvl", "Unyielding", "Strong",
+                  "Mythic", "Titanic", "Necrotic", "Clean", "Wise", "Light", "Giant", "Heavy", "Smart", "Ancient",
+                  "Reinforced", "Hurtful", "Skin", "Renowned", "New Year Cake", "Sharp", "Dragon", "Unreal",
+                  "Legendary", "Fair", "Deadly", "Forceful", "⚚", "Heroic"]
+
+        for i in exempt:
+            if i in name:
+                break
+        else:
+            self.statistics[name] += 1
+
+
+    def write_statistics(self):
+        sorted_dict = dict(sorted(self.statistics.items(), key=lambda item: item[1]))
+        with open("data/statistics_bin.json", 'w+') as file:
+            json.dump(sorted_dict, file, indent=4)
 
     def write_file(self):
         with open('data/data_bin.json', 'w') as file:

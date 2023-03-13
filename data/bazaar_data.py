@@ -14,7 +14,9 @@ class BazaarData:
         products = requests.get("https://api.hypixel.net/skyblock/bazaar")
         self.data = products.json()
         with open('data/data_bazaar_full.json', 'w+') as f:
-            json.dump(self.data, f)
+            json.dump(self.data, f, indent=4)
+        with open('data/data_bazaar.json', 'w+') as f:
+            json.dump(self.data["products"], f, indent=4)
 
         return self.data["products"]
 
